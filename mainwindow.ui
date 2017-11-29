@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="picLabel">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>10</y>
+      <width>251</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>220</y>
+      <width>453</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#1d6ee7;&quot;&gt;       Welcome to SJSU                                    Smart City Mesh Network&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Click to Begin</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>541</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File </string>
+    </property>
+    <widget class="QMenu" name="menuOpen_Node">
+     <property name="title">
+      <string>Open Node </string>
+     </property>
+     <widget class="QMenu" name="menuNode_1">
+      <property name="title">
+       <string>Node 1</string>
+      </property>
+      <addaction name="actionTemp_Graph"/>
+     </widget>
+     <widget class="QMenu" name="menuNode_2">
+      <property name="title">
+       <string>Node 2</string>
+      </property>
+      <addaction name="actionTemp_Graph_2"/>
+     </widget>
+     <widget class="QMenu" name="menuNode_3">
+      <property name="title">
+       <string>Node 3</string>
+      </property>
+      <addaction name="actionTemp_Graph_3"/>
+     </widget>
+     <addaction name="menuNode_1"/>
+     <addaction name="menuNode_2"/>
+     <addaction name="menuNode_3"/>
+    </widget>
+    <addaction name="menuOpen_Node"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normalon>images/exit.jpg</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionNode_2">
+   <property name="icon">
+    <iconset>
+     <normalon>images/newNode.jpg</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Node 2</string>
+   </property>
+  </action>
+  <action name="actionNode_3">
+   <property name="icon">
+    <iconset>
+     <normalon>images/newNode.jpg</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Node 3</string>
+   </property>
+  </action>
+  <action name="actionTemp_Graph">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/tempGraph.png</normaloff>images/tempGraph.png</iconset>
+   </property>
+   <property name="text">
+    <string>Temp. Graph</string>
+   </property>
+  </action>
+  <action name="actionTemp_Graph_2">
+   <property name="icon">
+    <iconset>
+     <activeon>images/tempGraph.png</activeon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Temp. Graph</string>
+   </property>
+  </action>
+  <action name="actionTemp_Graph_3">
+   <property name="icon">
+    <iconset>
+     <activeon>images/tempGraph.png</activeon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Temp. Graph</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
